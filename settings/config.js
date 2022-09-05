@@ -24,9 +24,10 @@ module.exports = {
 
     NODES: [
       { 
-        host: process.env.NODE_HOST || "localhost",
-        port: parseInt(process.env.NODE_PORT || "5555"),
-        password: process.env.NODE_PASSWORD || "123456",
+        host: process.env.NODE_HOST || "",
+        port: parseInt(process.env.NODE_PORT || ""),
+        password: process.env.NODE_PASSWORD || "",
+        secure: false,
       } 
     ],
 }
